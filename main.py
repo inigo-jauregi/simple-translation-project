@@ -39,8 +39,8 @@ def main():
     trainer.fit(model, data_module)
 
     # Save model
-    model.model.save_pretrained("./nllb_finetuned")
-    model.tokenizer.save_pretrained("./nllb_finetuned")
+    model.model.save_pretrained("./models/nllb_finetuned")
+    model.tokenizer.save_pretrained("./models/nllb_finetuned")
     print("Model saved to ./nllb_finetuned")
 
 
